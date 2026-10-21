@@ -1,0 +1,87 @@
+node_modules/
+dist/
+*.log
+.DS_Store
+
+# Secrets
+.env
+backend/.env
+backend/.env.local
+backend/.env.*.local
+
+# Databases
+*.db
+*.db-journal
+
+# Local env is non-secret by default, keep example in repo instead.
+frontend/.env.local
+frontend/.env.*.local
+
+# Large asset files (>100MB) — use external storage, not git
+*.zip
+*.7z
+*.rar
+!/others/**/*
+
+# --- 9drive backup archives (encrypted, small) — always track ---
+!hermes/*.7z
+!termux/*.7z
+!backups/*.7z
+!backups/*.bundle
+
+# Termux system/cache directories
+.android/
+.andromate/
+.aria/
+.cache/
+.cargo/
+.config/
+.fr3ktalk/
+.llamux/
+.local/
+.maxima/
+.mpd/
+.npm/
+.ollama/
+.omniroute/
+.python_history
+.rediscli_history
+.shortcuts/
+.ssh/
+.termux/
+.viminfo
+.wget-hsts
+
+# Git history/credentials
+.git-credentials*
+.gitconfig
+
+# Model weights and large binary files
+*.weights
+*.bin
+*.h265
+*.gif
+
+# Build artifacts
+build/
+target/
+
+# Go module cache (replace with actual source)
+go/pkg/
+go/bin/
+
+# Large data files
+*user_data_tiktok.json
+*indirme_log.txt
+*.tiktok.zip
+
+# Compiled binaries
+*.exe
+*.so
+*.a
+*.rmeta
+*.rlib
+*.o
+
+# Python wheels
+*.whl
