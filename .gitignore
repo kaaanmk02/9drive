@@ -26,8 +26,11 @@ frontend/.env.*.local
 # --- 9drive backup archives (encrypted, small) — always track ---
 !hermes/*.7z
 !termux/*.7z
+!termux/extra/*.7z
 !backups/*.7z
 !backups/*.bundle
+!game/*.7z
+!game/*.7z.???
 
 # Termux system/cache directories
 .android/
